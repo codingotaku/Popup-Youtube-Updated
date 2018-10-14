@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codingotaku.apps.popupyoutube.MainController">
+	<children>
+		<HBox fx:id="titleBar" styleClass="title-bar" prefHeight="30.0">
+   			<children>
+ 				<HBox fx:id="title" layoutX="0" prefHeight="30.0" HBox.hgrow="ALWAYS" onMousePressed="#titleSelected" onMouseDragged="#titleDragged" onMouseReleased="#titleReleased">
+   					<padding>
+   						<Insets left="5" />
+   					</padding>
+      				<children>
+      					<Label styleClass="title" text="Popup Youtube" />
+      				</children>
+   				</HBox>
+   				<Label alignment="CENTER" prefWidth="40.0" prefHeight="30.0" styleClass="pin" text="Pin" onMouseClicked="#pin" fx:id="pin"/>
+   				<Label alignment="CENTER" prefWidth="30.0" prefHeight="30.0" styleClass="fullscreen" text="⿴" onMouseClicked="#fullScreen"/>
+   				<Label alignment="CENTER" prefWidth="30.0" prefHeight="30.0" styleClass="minimize" text="_" onMouseClicked="#minimize"/>
+   				<Label alignment="CENTER" prefWidth="30.0" prefHeight="30.0" styleClass="resize" text="⬜" onMouseClicked="#resize" fx:id="resize" />
+   				<Label alignment="CENTER" prefWidth="30.0" prefHeight="30.0" styleClass="close" text="X" onMouseClicked="#close"/>
+   			</children>
+		</HBox>
+		<AnchorPane VBox.vgrow="ALWAYS">
+			<children>
+				<WebView fx:id="browser" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0" />
+					<HBox prefHeight="30.0" styleClass="search-bar" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="10.0" fx:id="searchBar">
+					<children>
+						<TextField fx:id="search" prefHeight="20.0" promptText="YouTube video/playlist URL" styleClass="search" HBox.hgrow="ALWAYS" />
+					</children>
+				</HBox>
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>
