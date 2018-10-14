@@ -1,0 +1,44 @@
+.title-bar{
+	-fx-background-color: #323232;
+}
+.title{
+	-fx-background-color: #323232;
+	-fx-text-fill: white;
+	-fx-font-weight : bold;
+}
+.root{
+	-fx-background-color: transparent;
+}
+.minimize{
+	-fx-text-fill:white;
+	-fx-font-weight : bold;
+}
+
+.minimize:hover, .minimize:active{
+	-fx-background-color: blue;
+}
+.fullscreen{
+	-fx-text-fill:white;
+	-fx-font-weight : bold;
+}
+.fullscreen:hover, .fullscreen:active{
+	-fx-background-color: orange;
+}
+.pin{
+	-fx-text-fill:white;
+	-fx-font-weight : bold;
+}
+.resize{
+	-fx-text-fill:white;
+	-fx-font-weight : bold;
+}
+.resize:hover, .resize:active{
+	-fx-background-color: green;
+}
+.close{
+	-fx-text-fill:white;
+	-fx-font-weight : bold;
+}
+.close:hover, .close:active{
+	-fx-background-color: red;
+}
