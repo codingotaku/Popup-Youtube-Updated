@@ -20,7 +20,7 @@ public class Main extends Application {
 			stage.setMinHeight(150);
 			stage.setResizable(true);
 			Scene scene = new Scene(root,600,500);
-			stage.getIcons().add(new Image(getClass().getResourceAsStream("C.bmp")));
+			stage.getIcons().add(new Image(getClass().getResourceAsStream("PopupYouTube.png")));
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			stage.setScene(scene);
 			stage.show();
