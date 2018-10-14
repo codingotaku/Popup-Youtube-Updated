@@ -4,7 +4,7 @@
 ### Get the latest release from [here](https://github.com/codingotaku/Popup-Youtube-Updated/releases/latest)
 
 #### The app doesn't allow YouTube to save cookies and no annoying annotations!
-Please provide a video/playlist URL, entering youtube.com
+Please provide a video/playlist URL instead of entering youtube.com
 
 ## Screenshots
 
